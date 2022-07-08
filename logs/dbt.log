@@ -1,0 +1,1614 @@
+2022-07-08 06:51:56.457725 (MainThread): Running with dbt=0.21.1
+2022-07-08 06:51:56.842549 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 06:51:57.666545 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 06:51:57.675676 (MainThread): Tracking: tracking
+2022-07-08 06:51:57.676598 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C533C11460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C533C113A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C533C114C0>]}
+2022-07-08 06:51:57.688655 (MainThread): Partial parsing not enabled
+2022-07-08 06:51:57.746552 (MainThread): Parsing macros\adapters.sql
+2022-07-08 06:51:57.787442 (MainThread): Parsing macros\catalog.sql
+2022-07-08 06:51:57.789436 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 06:51:57.798412 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 06:51:57.802402 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 06:51:57.807421 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 06:51:57.810412 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 06:51:57.811410 (MainThread): Parsing macros\core.sql
+2022-07-08 06:51:57.816366 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 06:51:57.881223 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 06:51:57.889201 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 06:51:57.891200 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 06:51:57.892194 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 06:51:57.895186 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 06:51:57.897155 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 06:51:57.898146 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 06:51:57.900140 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 06:51:57.911111 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 06:51:57.919125 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 06:51:57.934051 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 06:51:57.935079 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 06:51:57.947047 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 06:51:57.969955 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 06:51:57.999906 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 06:51:58.032787 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 06:51:58.034782 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 06:51:58.058749 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 06:51:58.065729 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 06:51:58.069719 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 06:51:58.077698 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 06:51:58.080691 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 06:51:58.081687 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 06:51:58.083651 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 06:51:58.359484 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:51:58.374445 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:51:58.409095 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:51:58.411089 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:51:58.413085 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:51:58.415078 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:51:58.418071 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:51:58.439466 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '83be7d62-d071-49f7-812a-d996033e056c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5364E7220>]}
+2022-07-08 06:51:58.445456 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 06:51:58.446766 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '83be7d62-d071-49f7-812a-d996033e056c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5364E7700>]}
+2022-07-08 06:51:58.446766 (MainThread): Found 2 models, 5 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 06:51:58.448751 (MainThread): 
+2022-07-08 06:51:58.449751 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 06:51:58.450746 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 06:51:58.473684 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 06:51:58.473684 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 06:51:58.474682 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 06:52:00.669478 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.19 seconds
+2022-07-08 06:52:00.679657 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 06:52:01.219629 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 06:52:01.226614 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 06:52:01.226614 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 06:52:01.226614 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 06:52:03.366916 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 2.14 seconds
+2022-07-08 06:52:03.367913 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 06:52:03.905584 (MainThread): 12:22:03 | Concurrency: 1 threads (target='dev')
+2022-07-08 06:52:03.905584 (MainThread): 12:22:03 | 
+2022-07-08 06:52:03.908576 (Thread-1): Began running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:52:03.908576 (Thread-1): 12:22:03 | 1 of 2 START view model albinschema.shopify_daily_avg_order.......... [RUN]
+2022-07-08 06:52:03.909573 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:52:03.909573 (Thread-1): Compiling model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:52:03.911568 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 06:52:03.921125 (Thread-1): finished collecting timing info
+2022-07-08 06:52:03.946055 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 06:52:03.948051 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:52:03.949048 (Thread-1): On model.my_new_project.shopify_daily_avg_order: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_avg_order"} */
+
+  create or replace  view trainingdb.albinschema.shopify_daily_avg_order  as (
+    -- Use the `ref` function to select from other models
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDERED_DATE,ROUND(AVG(TOTAL_PRICE_USD),2) AS AVG_SALES 
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1;
+2022-07-08 06:52:03.949048 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 06:52:06.089452 (Thread-1): Snowflake query id: 01a576bb-0402-32a0-0075-e28300a27e0a
+2022-07-08 06:52:06.089452 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 7 at position 10 unexpected ';'.
+2022-07-08 06:52:06.089452 (Thread-1): finished collecting timing info
+2022-07-08 06:52:06.090449 (Thread-1): On model.my_new_project.shopify_daily_avg_order: Close
+2022-07-08 06:52:06.638139 (Thread-1): Database Error in model shopify_daily_avg_order (models\example\shopify_daily_avg_order.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 10 unexpected ';'.
+  compiled SQL at target\run\my_new_project\models\example\shopify_daily_avg_order.sql
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\snowflake\connections.py", line 183, in exception_handler
+    yield
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\sql\connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\snowflake\connector\cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "C:\Users\Admin\anaconda3\lib\site-packages\snowflake\connector\errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\snowflake\connector\errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 7 at position 10 unexpected ';'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 27, in macro
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 55, in macro
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\base\impl.py", line 226, in execute
+    return self.connections.execute(
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\sql\connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\snowflake\connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\sql\connections.py", line 87, in add_query
+    return connection, cursor
+  File "C:\Users\Admin\anaconda3\lib\contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\snowflake\connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model shopify_daily_avg_order (models\example\shopify_daily_avg_order.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 10 unexpected ';'.
+  compiled SQL at target\run\my_new_project\models\example\shopify_daily_avg_order.sql
+2022-07-08 06:52:06.648456 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83be7d62-d071-49f7-812a-d996033e056c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C53641AD90>]}
+2022-07-08 06:52:06.649458 (Thread-1): 12:22:06 | 1 of 2 ERROR creating view model albinschema.shopify_daily_avg_order. [ERROR in 2.74s]
+2022-07-08 06:52:06.650418 (Thread-1): Finished running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:52:06.650418 (Thread-1): Began running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:52:06.650418 (Thread-1): 12:22:06 | 2 of 2 START table model albinschema.shopify_daily_sales_orders...... [RUN]
+2022-07-08 06:52:06.651419 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:52:06.651419 (Thread-1): Compiling model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:52:06.653413 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 06:52:06.654410 (Thread-1): finished collecting timing info
+2022-07-08 06:52:06.674389 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 06:52:06.676352 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:52:06.676352 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_sales_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_sales_orders  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,SUM(TOTAL_PRICE_USD) AS TOTAL_SALES,COUNT(ID) AS TOTAL_ORDERS FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1;
+2022-07-08 06:52:06.676352 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 06:52:08.706263 (Thread-1): Snowflake query id: 01a576bb-0402-343b-0075-e28300a2eade
+2022-07-08 06:52:08.706263 (Thread-1): Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 14 at position 10 unexpected ';'.
+2022-07-08 06:52:08.706263 (Thread-1): finished collecting timing info
+2022-07-08 06:52:08.706263 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: Close
+2022-07-08 06:52:09.300743 (Thread-1): Database Error in model shopify_daily_sales_orders (models\example\shopify_daily_sales_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 14 at position 10 unexpected ';'.
+  compiled SQL at target\run\my_new_project\models\example\shopify_daily_sales_orders.sql
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\snowflake\connections.py", line 183, in exception_handler
+    yield
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\sql\connections.py", line 80, in add_query
+    cursor.execute(sql, bindings)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\snowflake\connector\cursor.py", line 721, in execute
+    Error.errorhandler_wrapper(
+  File "C:\Users\Admin\anaconda3\lib\site-packages\snowflake\connector\errors.py", line 258, in errorhandler_wrapper
+    cursor.errorhandler(connection, cursor, error_class, error_value)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\snowflake\connector\errors.py", line 188, in default_errorhandler
+    raise error_class(
+snowflake.connector.errors.ProgrammingError: 001003 (42000): SQL compilation error:
+syntax error line 14 at position 10 unexpected ';'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\base.py", line 348, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\base.py", line 291, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\base.py", line 393, in run
+    return self.execute(compiled_node, manifest)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\task\run.py", line 249, in execute
+    result = MacroGenerator(materialization_macro, context)()
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 65, in macro
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 333, in __call__
+    return self.call_macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\clients\jinja.py", line 260, in call_macro
+    return macro(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 675, in __call__
+    return self._invoke(arguments, autoescape)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 679, in _invoke
+    rv = self._func(*arguments)
+  File "<template>", line 41, in macro
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\sandbox.py", line 462, in call
+    return __context.call(__obj, *args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\jinja2\runtime.py", line 290, in call
+    return __obj(*args, **kwargs)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\base\impl.py", line 226, in execute
+    return self.connections.execute(
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\sql\connections.py", line 131, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\snowflake\connections.py", line 354, in add_query
+    connection, cursor = super().add_query(
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\sql\connections.py", line 87, in add_query
+    return connection, cursor
+  File "C:\Users\Admin\anaconda3\lib\contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "C:\Users\Admin\anaconda3\lib\site-packages\dbt\adapters\snowflake\connections.py", line 200, in exception_handler
+    raise DatabaseException(msg)
+dbt.exceptions.DatabaseException: Database Error in model shopify_daily_sales_orders (models\example\shopify_daily_sales_orders.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 14 at position 10 unexpected ';'.
+  compiled SQL at target\run\my_new_project\models\example\shopify_daily_sales_orders.sql
+2022-07-08 06:52:09.301739 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '83be7d62-d071-49f7-812a-d996033e056c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C536873880>]}
+2022-07-08 06:52:09.301739 (Thread-1): 12:22:09 | 2 of 2 ERROR creating table model albinschema.shopify_daily_sales_orders [ERROR in 2.65s]
+2022-07-08 06:52:09.302587 (Thread-1): Finished running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:52:09.303587 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 06:52:09.304617 (MainThread): 12:22:09 | 
+2022-07-08 06:52:09.304617 (MainThread): 12:22:09 | Finished running 1 view model, 1 table model in 10.85s.
+2022-07-08 06:52:09.304617 (MainThread): Connection 'master' was properly closed.
+2022-07-08 06:52:09.305583 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 06:52:09.305583 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 06:52:09.305583 (MainThread): Connection 'model.my_new_project.shopify_daily_sales_orders' was properly closed.
+2022-07-08 06:52:09.309572 (MainThread): 
+2022-07-08 06:52:09.310569 (MainThread): Completed with 2 errors and 0 warnings:
+2022-07-08 06:52:09.310569 (MainThread): 
+2022-07-08 06:52:09.311566 (MainThread): Database Error in model shopify_daily_avg_order (models\example\shopify_daily_avg_order.sql)
+2022-07-08 06:52:09.312568 (MainThread):   001003 (42000): SQL compilation error:
+2022-07-08 06:52:09.312568 (MainThread):   syntax error line 7 at position 10 unexpected ';'.
+2022-07-08 06:52:09.312568 (MainThread):   compiled SQL at target\run\my_new_project\models\example\shopify_daily_avg_order.sql
+2022-07-08 06:52:09.318045 (MainThread): 
+2022-07-08 06:52:09.318676 (MainThread): Database Error in model shopify_daily_sales_orders (models\example\shopify_daily_sales_orders.sql)
+2022-07-08 06:52:09.319531 (MainThread):   001003 (42000): SQL compilation error:
+2022-07-08 06:52:09.320000 (MainThread):   syntax error line 14 at position 10 unexpected ';'.
+2022-07-08 06:52:09.320000 (MainThread):   compiled SQL at target\run\my_new_project\models\example\shopify_daily_sales_orders.sql
+2022-07-08 06:52:09.320000 (MainThread): 
+Done. PASS=0 WARN=0 ERROR=2 SKIP=0 TOTAL=2
+2022-07-08 06:52:09.320999 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C536873880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C5365093D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C536509EE0>]}
+2022-07-08 06:52:09.320999 (MainThread): Flushing usage events
+2022-07-08 06:52:56.190465 (MainThread): Running with dbt=0.21.1
+2022-07-08 06:52:56.594829 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 06:52:57.408281 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 06:52:57.408281 (MainThread): Tracking: tracking
+2022-07-08 06:52:57.409282 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F05881490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F058813D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F058814F0>]}
+2022-07-08 06:52:57.422216 (MainThread): Partial parsing not enabled
+2022-07-08 06:52:57.465098 (MainThread): Parsing macros\adapters.sql
+2022-07-08 06:52:57.519982 (MainThread): Parsing macros\catalog.sql
+2022-07-08 06:52:57.520983 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 06:52:57.530956 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 06:52:57.534943 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 06:52:57.539930 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 06:52:57.542892 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 06:52:57.544920 (MainThread): Parsing macros\core.sql
+2022-07-08 06:52:57.548905 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 06:52:57.614697 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 06:52:57.624670 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 06:52:57.626665 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 06:52:57.628660 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 06:52:57.631652 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 06:52:57.633647 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 06:52:57.634644 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 06:52:57.636639 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 06:52:57.649638 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 06:52:57.655619 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 06:52:57.669580 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 06:52:57.671577 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 06:52:57.682518 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 06:52:57.707449 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 06:52:57.735374 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 06:52:57.765294 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 06:52:57.767289 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 06:52:57.786242 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 06:52:57.794236 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 06:52:57.798206 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 06:52:57.806217 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 06:52:57.808215 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 06:52:57.809209 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 06:52:57.811203 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 06:52:58.077523 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:52:58.089523 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:52:58.120684 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:52:58.122646 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:52:58.124675 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:52:58.127666 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:52:58.129657 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:52:58.150574 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7d46f0c2-9972-4508-a0db-ae91363156a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F0815D550>]}
+2022-07-08 06:52:58.156303 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 06:52:58.157299 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7d46f0c2-9972-4508-a0db-ae91363156a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F0815DA60>]}
+2022-07-08 06:52:58.157299 (MainThread): Found 2 models, 5 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 06:52:58.160298 (MainThread): 
+2022-07-08 06:52:58.161289 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 06:52:58.162286 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 06:52:58.183232 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 06:52:58.183232 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 06:52:58.183232 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 06:53:00.448364 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.27 seconds
+2022-07-08 06:53:00.450356 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 06:53:01.012325 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 06:53:01.020306 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 06:53:01.021304 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 06:53:01.021304 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 06:53:03.124551 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 7 in 2.10 seconds
+2022-07-08 06:53:03.126545 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 06:53:03.694312 (MainThread): 12:23:03 | Concurrency: 1 threads (target='dev')
+2022-07-08 06:53:03.695341 (MainThread): 12:23:03 | 
+2022-07-08 06:53:03.701295 (Thread-1): Began running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:53:03.701295 (Thread-1): 12:23:03 | 1 of 2 START view model albinschema.shopify_daily_avg_order.......... [RUN]
+2022-07-08 06:53:03.702293 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:53:03.702293 (Thread-1): Compiling model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:53:03.704318 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 06:53:03.705284 (Thread-1): finished collecting timing info
+2022-07-08 06:53:03.734110 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 06:53:03.735109 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:53:03.735109 (Thread-1): On model.my_new_project.shopify_daily_avg_order: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_avg_order"} */
+
+  create or replace  view trainingdb.albinschema.shopify_daily_avg_order  as (
+    -- Use the `ref` function to select from other models
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,ROUND(AVG(TOTAL_PRICE_USD),2) AS AVG_SALES 
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1
+  );
+2022-07-08 06:53:03.735109 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 06:53:05.801362 (Thread-1): SQL status: SUCCESS 1 in 2.07 seconds
+2022-07-08 06:53:05.810338 (Thread-1): finished collecting timing info
+2022-07-08 06:53:05.810338 (Thread-1): On model.my_new_project.shopify_daily_avg_order: Close
+2022-07-08 06:53:06.383664 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7d46f0c2-9972-4508-a0db-ae91363156a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F083E2DF0>]}
+2022-07-08 06:53:06.383664 (Thread-1): 12:23:06 | 1 of 2 OK created view model albinschema.shopify_daily_avg_order..... [SUCCESS 1 in 2.68s]
+2022-07-08 06:53:06.384664 (Thread-1): Finished running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:53:06.384664 (Thread-1): Began running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:53:06.385660 (Thread-1): 12:23:06 | 2 of 2 START table model albinschema.shopify_daily_sales_orders...... [RUN]
+2022-07-08 06:53:06.386657 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:53:06.386657 (Thread-1): Compiling model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:53:06.388686 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 06:53:06.389679 (Thread-1): finished collecting timing info
+2022-07-08 06:53:06.420119 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 06:53:06.422113 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:53:06.422113 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_sales_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_sales_orders  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,SUM(TOTAL_PRICE_USD) AS TOTAL_SALES,COUNT(ID) AS TOTAL_ORDERS FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1
+
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-08 06:53:06.422113 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 06:54:42.439498 (Thread-1): SQL status: SUCCESS 1 in 96.02 seconds
+2022-07-08 06:54:42.444519 (Thread-1): finished collecting timing info
+2022-07-08 06:54:42.445517 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: Close
+2022-07-08 06:54:43.043448 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7d46f0c2-9972-4508-a0db-ae91363156a8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027F08488640>]}
+2022-07-08 06:54:43.044445 (Thread-1): 12:24:43 | 2 of 2 OK created table model albinschema.shopify_daily_sales_orders. [SUCCESS 1 in 96.66s]
+2022-07-08 06:54:43.045442 (Thread-1): Finished running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:54:43.047438 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 06:54:43.047438 (MainThread): 12:24:43 | CANCEL query list_trainingdb......................................... [CANCEL]
+2022-07-08 06:54:43.048434 (MainThread): 12:24:43 | CANCEL query list_trainingdb_albinschema............................. [CANCEL]
+2022-07-08 06:54:43.048434 (MainThread): 12:24:43 | CANCEL query model.my_new_project.shopify_daily_sales_orders......... [CANCEL]
+2022-07-08 06:54:43.049432 (MainThread): 
+2022-07-08 06:54:43.049432 (MainThread): Exited because of keyboard interrupt.
+2022-07-08 06:54:43.050429 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2022-07-08 06:54:43.050429 (MainThread): Connection 'master' was properly closed.
+2022-07-08 06:54:43.050429 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 06:54:43.051427 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 06:54:43.051427 (MainThread): Connection 'model.my_new_project.shopify_daily_sales_orders' was properly closed.
+2022-07-08 06:54:43.051427 (MainThread): Flushing usage events
+2022-07-08 06:54:44.165579 (MainThread): ctrl-c
+2022-07-08 06:55:31.187915 (MainThread): Running with dbt=0.21.1
+2022-07-08 06:55:31.756150 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 06:55:32.810178 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 06:55:32.810178 (MainThread): Tracking: tracking
+2022-07-08 06:55:32.811176 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB182D1490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB182D13D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB182D14F0>]}
+2022-07-08 06:55:32.825224 (MainThread): Partial parsing not enabled
+2022-07-08 06:55:32.869104 (MainThread): Parsing macros\adapters.sql
+2022-07-08 06:55:32.910027 (MainThread): Parsing macros\catalog.sql
+2022-07-08 06:55:32.911990 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 06:55:32.920965 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 06:55:32.924955 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 06:55:32.929974 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 06:55:32.932934 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 06:55:32.934930 (MainThread): Parsing macros\core.sql
+2022-07-08 06:55:32.938919 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 06:55:33.011733 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 06:55:33.019712 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 06:55:33.021709 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 06:55:33.023703 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 06:55:33.026695 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 06:55:33.028690 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 06:55:33.029687 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 06:55:33.031682 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 06:55:33.044646 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 06:55:33.053654 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 06:55:33.070576 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 06:55:33.071574 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 06:55:33.085538 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 06:55:33.112009 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 06:55:33.141898 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 06:55:33.173811 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 06:55:33.174808 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 06:55:33.199136 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 06:55:33.207116 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 06:55:33.211106 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 06:55:33.219085 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 06:55:33.222076 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 06:55:33.224073 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 06:55:33.226034 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 06:55:33.518273 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:55:33.534232 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:55:33.570810 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:55:33.572805 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:55:33.574835 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:55:33.576909 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:55:33.578820 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 06:55:33.594748 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '834c4957-a825-4691-ad46-b77e00f123d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB1ABA45E0>]}
+2022-07-08 06:55:33.600212 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 06:55:33.601599 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '834c4957-a825-4691-ad46-b77e00f123d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB1ABA4FA0>]}
+2022-07-08 06:55:33.601599 (MainThread): Found 2 models, 5 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 06:55:33.603587 (MainThread): 
+2022-07-08 06:55:33.603587 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 06:55:33.604967 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 06:55:33.625915 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 06:55:33.626914 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 06:55:33.626914 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 06:55:35.838807 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.21 seconds
+2022-07-08 06:55:35.842800 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 06:55:36.426104 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 06:55:36.434090 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 06:55:36.434090 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 06:55:36.434090 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 06:55:38.680368 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 9 in 2.25 seconds
+2022-07-08 06:55:38.682379 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 06:55:39.252187 (MainThread): 12:25:39 | Concurrency: 1 threads (target='dev')
+2022-07-08 06:55:39.252187 (MainThread): 12:25:39 | 
+2022-07-08 06:55:39.254185 (Thread-1): Began running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:55:39.255182 (Thread-1): 12:25:39 | 1 of 2 START view model albinschema.shopify_daily_avg_order.......... [RUN]
+2022-07-08 06:55:39.256179 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:55:39.257208 (Thread-1): Compiling model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:55:39.258208 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 06:55:39.259203 (Thread-1): finished collecting timing info
+2022-07-08 06:55:39.286434 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 06:55:39.287432 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 06:55:39.287432 (Thread-1): On model.my_new_project.shopify_daily_avg_order: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_avg_order"} */
+
+  create or replace  view trainingdb.albinschema.shopify_daily_avg_order  as (
+    -- Use the `ref` function to select from other models
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,ROUND(AVG(TOTAL_PRICE_USD),2) AS AVG_SALES 
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1
+  );
+2022-07-08 06:55:39.288427 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 06:55:41.421604 (Thread-1): SQL status: SUCCESS 1 in 2.13 seconds
+2022-07-08 06:55:41.428584 (Thread-1): finished collecting timing info
+2022-07-08 06:55:41.428584 (Thread-1): On model.my_new_project.shopify_daily_avg_order: Close
+2022-07-08 06:55:42.008900 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '834c4957-a825-4691-ad46-b77e00f123d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB1AE3A280>]}
+2022-07-08 06:55:42.009896 (Thread-1): 12:25:42 | 1 of 2 OK created view model albinschema.shopify_daily_avg_order..... [SUCCESS 1 in 2.75s]
+2022-07-08 06:55:42.010807 (Thread-1): Finished running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 06:55:42.010807 (Thread-1): Began running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:55:42.010807 (Thread-1): 12:25:42 | 2 of 2 START table model albinschema.shopify_daily_sales_orders...... [RUN]
+2022-07-08 06:55:42.011912 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:55:42.011912 (Thread-1): Compiling model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:55:42.013899 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 06:55:42.013899 (Thread-1): finished collecting timing info
+2022-07-08 06:55:42.039831 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 06:55:42.041825 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 06:55:42.041825 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_sales_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_sales_orders  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,SUM(TOTAL_PRICE_USD) AS TOTAL_SALES,COUNT(ID) AS TOTAL_ORDERS FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1
+
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-08 06:55:42.041825 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 06:55:45.780589 (Thread-1): SQL status: SUCCESS 1 in 3.74 seconds
+2022-07-08 06:55:45.786607 (Thread-1): finished collecting timing info
+2022-07-08 06:55:45.786607 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: Close
+2022-07-08 06:55:46.495210 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '834c4957-a825-4691-ad46-b77e00f123d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB1ADDE700>]}
+2022-07-08 06:55:46.495210 (Thread-1): 12:25:46 | 2 of 2 OK created table model albinschema.shopify_daily_sales_orders. [SUCCESS 1 in 4.48s]
+2022-07-08 06:55:46.496870 (Thread-1): Finished running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 06:55:46.497871 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 06:55:46.497871 (MainThread): 12:25:46 | 
+2022-07-08 06:55:46.499150 (MainThread): 12:25:46 | Finished running 1 view model, 1 table model in 12.89s.
+2022-07-08 06:55:46.499760 (MainThread): Connection 'master' was properly closed.
+2022-07-08 06:55:46.499760 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 06:55:46.499760 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 06:55:46.499760 (MainThread): Connection 'model.my_new_project.shopify_daily_sales_orders' was properly closed.
+2022-07-08 06:55:46.504751 (MainThread): 
+2022-07-08 06:55:46.504751 (MainThread): Completed successfully
+2022-07-08 06:55:46.509604 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2022-07-08 06:55:46.509604 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB1AF439A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB1AED6D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB1AED6D90>]}
+2022-07-08 06:55:46.509604 (MainThread): Flushing usage events
+2022-07-08 08:24:33.381905 (MainThread): Running with dbt=0.21.1
+2022-07-08 08:24:33.785064 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 08:24:34.588190 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 08:24:34.588190 (MainThread): Tracking: tracking
+2022-07-08 08:24:34.589192 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C0362430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C0362370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C0362490>]}
+2022-07-08 08:24:34.601124 (MainThread): Partial parsing not enabled
+2022-07-08 08:24:34.655013 (MainThread): Parsing macros\adapters.sql
+2022-07-08 08:24:34.697867 (MainThread): Parsing macros\catalog.sql
+2022-07-08 08:24:34.700859 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 08:24:34.709865 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 08:24:34.713824 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 08:24:34.717844 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 08:24:34.721833 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 08:24:34.722831 (MainThread): Parsing macros\core.sql
+2022-07-08 08:24:34.726790 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 08:24:34.781213 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 08:24:34.790188 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 08:24:34.792183 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 08:24:34.793180 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 08:24:34.797170 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 08:24:34.799166 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 08:24:34.800163 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 08:24:34.802158 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 08:24:34.816119 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 08:24:34.824098 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 08:24:34.847041 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 08:24:34.851038 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 08:24:34.865135 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 08:24:34.891064 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 08:24:34.914004 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 08:24:34.943924 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 08:24:34.945949 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 08:24:34.962904 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 08:24:34.969885 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 08:24:34.974841 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 08:24:34.981856 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 08:24:34.983818 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 08:24:34.985843 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 08:24:34.986810 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 08:24:35.244620 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:24:35.257585 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:24:35.260576 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:24:35.265564 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:24:35.268556 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:24:35.271516 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:24:35.311702 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.313664 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.315691 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.318650 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.320645 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.321642 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.323637 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.325631 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.327626 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.329620 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.330618 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.332613 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.335608 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.337601 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.339626 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.341619 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.342618 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.344613 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.347605 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.349601 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:24:35.368516 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C2AE4FA0>]}
+2022-07-08 08:24:35.377533 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 08:24:35.377533 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C037C250>]}
+2022-07-08 08:24:35.378530 (MainThread): Found 6 models, 20 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 08:24:35.383517 (MainThread): 
+2022-07-08 08:24:35.384514 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:24:35.385543 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 08:24:35.404461 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 08:24:35.404461 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 08:24:35.404461 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 08:24:37.580548 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.18 seconds
+2022-07-08 08:24:37.583503 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 08:24:38.142902 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:24:38.148915 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:24:38.149883 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 08:24:38.149883 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 08:24:40.342377 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 9 in 2.19 seconds
+2022-07-08 08:24:40.344381 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 08:24:40.904538 (MainThread): 13:54:40 | Concurrency: 1 threads (target='dev')
+2022-07-08 08:24:40.905569 (MainThread): 13:54:40 | 
+2022-07-08 08:24:40.910687 (Thread-1): Began running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 08:24:40.910687 (Thread-1): 13:54:40 | 1 of 6 START view model albinschema.shopify_daily_avg_order.......... [RUN]
+2022-07-08 08:24:40.910687 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:24:40.911687 (Thread-1): Compiling model.my_new_project.shopify_daily_avg_order
+2022-07-08 08:24:40.912717 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 08:24:40.913683 (Thread-1): finished collecting timing info
+2022-07-08 08:24:40.940735 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 08:24:40.942565 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:24:40.942565 (Thread-1): On model.my_new_project.shopify_daily_avg_order: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_avg_order"} */
+
+  create or replace  view trainingdb.albinschema.shopify_daily_avg_order  as (
+    -- Use the `ref` function to select from other models
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,ROUND(AVG(TOTAL_PRICE_USD),2) AS AVG_SALES 
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1
+  );
+2022-07-08 08:24:40.942565 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 08:24:43.183092 (Thread-1): SQL status: SUCCESS 1 in 2.24 seconds
+2022-07-08 08:24:43.195052 (Thread-1): finished collecting timing info
+2022-07-08 08:24:43.195052 (Thread-1): On model.my_new_project.shopify_daily_avg_order: Close
+2022-07-08 08:24:43.799737 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C2FACEE0>]}
+2022-07-08 08:24:43.799737 (Thread-1): 13:54:43 | 1 of 6 OK created view model albinschema.shopify_daily_avg_order..... [SUCCESS 1 in 2.89s]
+2022-07-08 08:24:43.800735 (Thread-1): Finished running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 08:24:43.801740 (Thread-1): Began running node model.my_new_project.shopify_daily_discount_data
+2022-07-08 08:24:43.801740 (Thread-1): 13:54:43 | 2 of 6 START view model albinschema.shopify_daily_discount_data...... [RUN]
+2022-07-08 08:24:43.802732 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:24:43.803731 (Thread-1): Compiling model.my_new_project.shopify_daily_discount_data
+2022-07-08 08:24:43.804727 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_discount_data"
+2022-07-08 08:24:43.807720 (Thread-1): finished collecting timing info
+2022-07-08 08:24:43.811710 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_discount_data"
+2022-07-08 08:24:43.814698 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:24:43.814698 (Thread-1): On model.my_new_project.shopify_daily_discount_data: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_discount_data"} */
+
+  create or replace  view trainingdb.albinschema.shopify_daily_discount_data  as (
+    select cast(created_at as date) as order_date,discount.code,discount.value 
+as discount_value,count(o.id) Order_Count,sum(total_discounts) total_discounts
+from  "FIVETRAN_DATABASE"."SHOPIFY_DS"."DISCOUNT_APPLICATION" discount
+inner join "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER" o 
+on discount.order_id = o.id
+where discount.code is not null
+group by 1,2,3
+order by 4 desc
+  );
+2022-07-08 08:24:43.814698 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:24:45.794967 (Thread-1): SQL status: SUCCESS 1 in 1.98 seconds
+2022-07-08 08:24:45.796997 (Thread-1): finished collecting timing info
+2022-07-08 08:24:45.797996 (Thread-1): On model.my_new_project.shopify_daily_discount_data: Close
+2022-07-08 08:24:46.352502 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C2EE8220>]}
+2022-07-08 08:24:46.352502 (Thread-1): 13:54:46 | 2 of 6 OK created view model albinschema.shopify_daily_discount_data. [SUCCESS 1 in 2.55s]
+2022-07-08 08:24:46.353499 (Thread-1): Finished running node model.my_new_project.shopify_daily_discount_data
+2022-07-08 08:24:46.353499 (Thread-1): Began running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:24:46.353499 (Thread-1): 13:54:46 | 3 of 6 START table model albinschema.shopify_daily_sales_orders...... [RUN]
+2022-07-08 08:24:46.354497 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:24:46.354497 (Thread-1): Compiling model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:24:46.359484 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:24:46.359484 (Thread-1): finished collecting timing info
+2022-07-08 08:24:46.380458 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:24:46.382423 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:24:46.382423 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_sales_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_sales_orders  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,SUM(TOTAL_PRICE_USD) AS TOTAL_SALES,COUNT(ID) AS TOTAL_ORDERS FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1
+
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-08 08:24:46.382423 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:24:50.254072 (Thread-1): SQL status: SUCCESS 1 in 3.87 seconds
+2022-07-08 08:24:50.259086 (Thread-1): finished collecting timing info
+2022-07-08 08:24:50.260051 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: Close
+2022-07-08 08:24:50.829283 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C2FF23D0>]}
+2022-07-08 08:24:50.829283 (Thread-1): 13:54:50 | 3 of 6 OK created table model albinschema.shopify_daily_sales_orders. [SUCCESS 1 in 4.47s]
+2022-07-08 08:24:50.830460 (Thread-1): Finished running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:24:50.830460 (Thread-1): Began running node model.my_new_project.shopify_refund_orders
+2022-07-08 08:24:50.830460 (Thread-1): 13:54:50 | 4 of 6 START view model albinschema.shopify_refund_orders............ [RUN]
+2022-07-08 08:24:50.831460 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:24:50.831460 (Thread-1): Compiling model.my_new_project.shopify_refund_orders
+2022-07-08 08:24:50.833455 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_refund_orders"
+2022-07-08 08:24:50.834454 (Thread-1): finished collecting timing info
+2022-07-08 08:24:50.837698 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_refund_orders"
+2022-07-08 08:24:50.839289 (Thread-1): Using snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:24:50.839289 (Thread-1): On model.my_new_project.shopify_refund_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_refund_orders"} */
+
+  create or replace  view trainingdb.albinschema.shopify_refund_orders  as (
+    select to_char(cast(created_at as date),'MM-YYYY') as REFUND_MONTH,NOTE as REASON,count(distinct id) REFUND_ORDERS
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."REFUND"
+GROUP BY 1,2 
+ORDER BY 1 DESC
+  );
+2022-07-08 08:24:50.839289 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:24:53.098101 (Thread-1): SQL status: SUCCESS 1 in 2.26 seconds
+2022-07-08 08:24:53.099090 (Thread-1): finished collecting timing info
+2022-07-08 08:24:53.099090 (Thread-1): On model.my_new_project.shopify_refund_orders: Close
+2022-07-08 08:24:53.667549 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C3036460>]}
+2022-07-08 08:24:53.668540 (Thread-1): 13:54:53 | 4 of 6 OK created view model albinschema.shopify_refund_orders....... [SUCCESS 1 in 2.84s]
+2022-07-08 08:24:53.669538 (Thread-1): Finished running node model.my_new_project.shopify_refund_orders
+2022-07-08 08:24:53.669538 (Thread-1): Began running node model.my_new_project.shopify_sales_city
+2022-07-08 08:24:53.669538 (Thread-1): 13:54:53 | 5 of 6 START view model albinschema.shopify_sales_city............... [RUN]
+2022-07-08 08:24:53.670537 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:24:53.670537 (Thread-1): Compiling model.my_new_project.shopify_sales_city
+2022-07-08 08:24:53.671561 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_sales_city"
+2022-07-08 08:24:53.672535 (Thread-1): finished collecting timing info
+2022-07-08 08:24:53.674524 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_sales_city"
+2022-07-08 08:24:53.676519 (Thread-1): Using snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:24:53.676519 (Thread-1): On model.my_new_project.shopify_sales_city: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_sales_city"} */
+
+  create or replace  view trainingdb.albinschema.shopify_sales_city  as (
+    Select 
+cast(CREATED_AT as DATE) AS ORDER_DATE ,SHIPPING_ADDRESS_CITY as CITY,SHIPPING_ADDRESS_COUNTRY as COUNTRY, SUM(TOTAL_PRICE_USD) as TOTAL_SALES
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+where CITY IS NOT NULL AND COUNTRY IS NOT NULL 
+group by 1,2,3
+HAVING TOTAL_SALES>0
+order by 3 desc
+  );
+2022-07-08 08:24:53.676519 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:24:55.928896 (Thread-1): SQL status: SUCCESS 1 in 2.25 seconds
+2022-07-08 08:24:55.930894 (Thread-1): finished collecting timing info
+2022-07-08 08:24:55.930894 (Thread-1): On model.my_new_project.shopify_sales_city: Close
+2022-07-08 08:24:56.501198 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C301AA30>]}
+2022-07-08 08:24:56.502192 (Thread-1): 13:54:56 | 5 of 6 OK created view model albinschema.shopify_sales_city.......... [SUCCESS 1 in 2.83s]
+2022-07-08 08:24:56.502907 (Thread-1): Finished running node model.my_new_project.shopify_sales_city
+2022-07-08 08:24:56.502907 (Thread-1): Began running node model.my_new_project.shopify_top_selling_product
+2022-07-08 08:24:56.503909 (Thread-1): 13:54:56 | 6 of 6 START view model albinschema.shopify_top_selling_product...... [RUN]
+2022-07-08 08:24:56.503909 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:24:56.504906 (Thread-1): Compiling model.my_new_project.shopify_top_selling_product
+2022-07-08 08:24:56.505903 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_top_selling_product"
+2022-07-08 08:24:56.506900 (Thread-1): finished collecting timing info
+2022-07-08 08:24:56.509921 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_top_selling_product"
+2022-07-08 08:24:56.511886 (Thread-1): Using snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:24:56.511886 (Thread-1): On model.my_new_project.shopify_top_selling_product: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_top_selling_product"} */
+
+  create or replace  view trainingdb.albinschema.shopify_top_selling_product  as (
+    SELECT
+P.TITLE, S.ORDER_DATE,SUM(S.SALES) AS TOTAL_SALES
+FROM (
+SELECT PRODUCT_ID, CAST(O.CREATED_AT AS DATE) AS ORDER_DATE,ROUND(SUM(TOTAL_PRICE),2) AS SALES
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER_LINE" OL
+LEFT JOIN "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER" O 
+ON O.ID = OL.ORDER_ID
+group by 1,2
+)S
+LEFT JOIN "FIVETRAN_DATABASE"."SHOPIFY_DS"."PRODUCT" P 
+ON S.PRODUCT_ID = P.ID
+WHERE P.TITLE IS NOT NULL
+GROUP BY 1,2
+ORDER BY 3 DESC
+  );
+2022-07-08 08:24:56.511886 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:24:58.741515 (Thread-1): SQL status: SUCCESS 1 in 2.23 seconds
+2022-07-08 08:24:58.743514 (Thread-1): finished collecting timing info
+2022-07-08 08:24:58.743514 (Thread-1): On model.my_new_project.shopify_top_selling_product: Close
+2022-07-08 08:24:59.306077 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '20a2c2cd-5f0b-48fa-86e4-a715c51c9f60', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C3026880>]}
+2022-07-08 08:24:59.307074 (Thread-1): 13:54:59 | 6 of 6 OK created view model albinschema.shopify_top_selling_product. [SUCCESS 1 in 2.80s]
+2022-07-08 08:24:59.308450 (Thread-1): Finished running node model.my_new_project.shopify_top_selling_product
+2022-07-08 08:24:59.309984 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:24:59.309984 (MainThread): 13:54:59 | 
+2022-07-08 08:24:59.309984 (MainThread): 13:54:59 | Finished running 5 view models, 1 table model in 23.93s.
+2022-07-08 08:24:59.310981 (MainThread): Connection 'master' was properly closed.
+2022-07-08 08:24:59.310981 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 08:24:59.310981 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 08:24:59.310981 (MainThread): Connection 'model.my_new_project.shopify_top_selling_product' was properly closed.
+2022-07-08 08:24:59.316965 (MainThread): 
+2022-07-08 08:24:59.316965 (MainThread): Completed successfully
+2022-07-08 08:24:59.318555 (MainThread): 
+Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+2022-07-08 08:24:59.318555 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C2B67160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C2AF9070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F8C3010940>]}
+2022-07-08 08:24:59.319556 (MainThread): Flushing usage events
+2022-07-08 08:35:36.915936 (MainThread): Running with dbt=0.21.1
+2022-07-08 08:35:37.296820 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 08:35:38.083329 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=['shopify_daily_sales_orders'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 08:35:38.083329 (MainThread): Tracking: tracking
+2022-07-08 08:35:38.084333 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1D421460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1D4213A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1D4214C0>]}
+2022-07-08 08:35:38.096294 (MainThread): Partial parsing not enabled
+2022-07-08 08:35:38.137471 (MainThread): Parsing macros\adapters.sql
+2022-07-08 08:35:38.181238 (MainThread): Parsing macros\catalog.sql
+2022-07-08 08:35:38.183230 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 08:35:38.191209 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 08:35:38.195198 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 08:35:38.202181 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 08:35:38.206171 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 08:35:38.208165 (MainThread): Parsing macros\core.sql
+2022-07-08 08:35:38.213152 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 08:35:38.274020 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 08:35:38.282964 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 08:35:38.283961 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 08:35:38.285956 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 08:35:38.287950 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 08:35:38.288948 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 08:35:38.289945 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 08:35:38.292940 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 08:35:38.305904 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 08:35:38.312916 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 08:35:38.325881 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 08:35:38.327878 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 08:35:38.337849 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 08:35:38.361785 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 08:35:38.384692 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 08:35:38.415641 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 08:35:38.418602 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 08:35:38.434558 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 08:35:38.441539 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 08:35:38.445529 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 08:35:38.458496 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 08:35:38.461488 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 08:35:38.463483 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 08:35:38.465508 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 08:35:38.729376 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:35:38.741314 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:35:38.744306 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:35:38.748298 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:35:38.751289 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:35:38.754282 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:35:38.795172 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.797166 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.799160 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.801154 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.803149 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.805144 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.807139 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.809133 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.811128 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.813125 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.815119 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.818111 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.820105 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.822142 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.825097 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.827092 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.829117 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.830111 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.832108 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.834108 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:35:38.855015 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1aa2d709-462d-48e0-8ff6-d8663a00e602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1FC2B460>]}
+2022-07-08 08:35:38.864273 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 08:35:38.864273 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1aa2d709-462d-48e0-8ff6-d8663a00e602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1D44BA90>]}
+2022-07-08 08:35:38.865268 (MainThread): Found 6 models, 20 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 08:35:38.868261 (MainThread): 
+2022-07-08 08:35:38.869258 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:35:38.870255 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 08:35:38.894191 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 08:35:38.895195 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 08:35:38.895195 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 08:35:41.143012 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.25 seconds
+2022-07-08 08:35:41.146035 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 08:35:41.772160 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:35:41.779142 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:35:41.779142 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 08:35:41.779142 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 08:35:43.742051 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 13 in 1.96 seconds
+2022-07-08 08:35:43.745046 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 08:35:44.316458 (MainThread): 14:05:44 | Concurrency: 1 threads (target='dev')
+2022-07-08 08:35:44.316458 (MainThread): 14:05:44 | 
+2022-07-08 08:35:44.321446 (Thread-1): Began running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:35:44.321446 (Thread-1): 14:05:44 | 1 of 1 START table model albinschema.shopify_daily_sales_orders...... [RUN]
+2022-07-08 08:35:44.322447 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:35:44.322447 (Thread-1): Compiling model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:35:44.325466 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:35:44.325466 (Thread-1): finished collecting timing info
+2022-07-08 08:35:44.358347 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:35:44.360342 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:35:44.360342 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_sales_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_sales_orders  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,SUM(TOTAL_PRICE_USD) AS TOTAL_SALES,COUNT(ID) AS TOTAL_ORDERS FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+having total_sales > 0
+ORDER BY 1
+
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-08 08:35:44.360342 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 08:35:47.473318 (Thread-1): SQL status: SUCCESS 1 in 3.11 seconds
+2022-07-08 08:35:47.483285 (Thread-1): finished collecting timing info
+2022-07-08 08:35:47.483285 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: Close
+2022-07-08 08:35:48.061866 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1aa2d709-462d-48e0-8ff6-d8663a00e602', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1FFC7FA0>]}
+2022-07-08 08:35:48.061866 (Thread-1): 14:05:48 | 1 of 1 OK created table model albinschema.shopify_daily_sales_orders. [SUCCESS 1 in 3.74s]
+2022-07-08 08:35:48.062823 (Thread-1): Finished running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:35:48.063821 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:35:48.064818 (MainThread): 14:05:48 | 
+2022-07-08 08:35:48.065224 (MainThread): 14:05:48 | Finished running 1 table model in 9.20s.
+2022-07-08 08:35:48.065751 (MainThread): Connection 'master' was properly closed.
+2022-07-08 08:35:48.065751 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 08:35:48.065751 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 08:35:48.065751 (MainThread): Connection 'model.my_new_project.shopify_daily_sales_orders' was properly closed.
+2022-07-08 08:35:48.070745 (MainThread): 
+2022-07-08 08:35:48.071738 (MainThread): Completed successfully
+2022-07-08 08:35:48.071738 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2022-07-08 08:35:48.075760 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1FCFA190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1FD21CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB1FD214F0>]}
+2022-07-08 08:35:48.075760 (MainThread): Flushing usage events
+2022-07-08 08:37:15.377231 (MainThread): Running with dbt=0.21.1
+2022-07-08 08:37:15.824153 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 08:37:16.691979 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=['shopify_daily_sales_orders'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 08:37:16.692978 (MainThread): Tracking: tracking
+2022-07-08 08:37:16.693973 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A7E3F14C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A7E3F1400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A7E3F1520>]}
+2022-07-08 08:37:16.706889 (MainThread): Partial parsing not enabled
+2022-07-08 08:37:16.753392 (MainThread): Parsing macros\adapters.sql
+2022-07-08 08:37:16.795280 (MainThread): Parsing macros\catalog.sql
+2022-07-08 08:37:16.797275 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 08:37:16.808245 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 08:37:16.812235 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 08:37:16.818219 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 08:37:16.821210 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 08:37:16.823205 (MainThread): Parsing macros\core.sql
+2022-07-08 08:37:16.828193 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 08:37:16.896012 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 08:37:16.907024 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 08:37:16.909018 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 08:37:16.911045 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 08:37:16.914039 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 08:37:16.915999 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 08:37:16.917995 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 08:37:16.920024 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 08:37:16.937974 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 08:37:16.945921 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 08:37:16.965867 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 08:37:16.967895 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 08:37:16.980826 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 08:37:17.006758 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 08:37:17.035681 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 08:37:17.075572 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 08:37:17.077567 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 08:37:17.098513 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 08:37:17.108484 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 08:37:17.112506 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 08:37:17.121455 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 08:37:17.123446 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 08:37:17.125441 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 08:37:17.126439 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 08:37:17.428138 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:37:17.443100 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:37:17.447089 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:37:17.455068 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:37:17.459061 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:37:17.462049 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:37:17.508922 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.513911 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.515905 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.518896 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.520890 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.522885 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.526875 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.528873 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.532388 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.534380 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.537372 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.539365 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.543355 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.546346 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.548341 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.550336 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.552330 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.556322 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.561307 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.563303 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:37:17.588235 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '23aa0e8b-e786-4e37-951d-b4247b4f1869', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A0100BBE0>]}
+2022-07-08 08:37:17.598227 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 08:37:17.599222 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '23aa0e8b-e786-4e37-951d-b4247b4f1869', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A7E41BA60>]}
+2022-07-08 08:37:17.599222 (MainThread): Found 6 models, 20 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 08:37:17.602218 (MainThread): 
+2022-07-08 08:37:17.603213 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:37:17.605203 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 08:37:17.630137 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 08:37:17.630137 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 08:37:17.631135 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 08:37:20.047666 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.42 seconds
+2022-07-08 08:37:20.051249 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 08:37:20.630536 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:37:20.639512 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:37:20.639512 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 08:37:20.640511 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 08:37:22.926351 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 13 in 2.29 seconds
+2022-07-08 08:37:22.928345 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 08:37:23.505951 (MainThread): 14:07:23 | Concurrency: 1 threads (target='dev')
+2022-07-08 08:37:23.506949 (MainThread): 14:07:23 | 
+2022-07-08 08:37:23.511937 (Thread-1): Began running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:37:23.512933 (Thread-1): 14:07:23 | 1 of 1 START table model albinschema.shopify_daily_sales_orders...... [RUN]
+2022-07-08 08:37:23.513930 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:37:23.513930 (Thread-1): Compiling model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:37:23.517920 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:37:23.518917 (Thread-1): finished collecting timing info
+2022-07-08 08:37:23.560201 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:37:23.561165 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:37:23.562161 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_sales_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_sales_orders  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,SUM(TOTAL_PRICE_USD) AS TOTAL_SALES,COUNT(ID) AS TOTAL_ORDERS FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+having total_sales > 0
+ORDER BY 1 desc
+
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-08 08:37:23.562161 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 08:37:27.424967 (Thread-1): SQL status: SUCCESS 1 in 3.86 seconds
+2022-07-08 08:37:27.437935 (Thread-1): finished collecting timing info
+2022-07-08 08:37:27.437935 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: Close
+2022-07-08 08:37:28.005741 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '23aa0e8b-e786-4e37-951d-b4247b4f1869', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A013A5FA0>]}
+2022-07-08 08:37:28.005741 (Thread-1): 14:07:28 | 1 of 1 OK created table model albinschema.shopify_daily_sales_orders. [SUCCESS 1 in 4.49s]
+2022-07-08 08:37:28.006740 (Thread-1): Finished running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:37:28.008734 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:37:28.008734 (MainThread): 14:07:28 | 
+2022-07-08 08:37:28.009730 (MainThread): 14:07:28 | Finished running 1 table model in 10.41s.
+2022-07-08 08:37:28.009730 (MainThread): Connection 'master' was properly closed.
+2022-07-08 08:37:28.009730 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 08:37:28.010731 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 08:37:28.010731 (MainThread): Connection 'model.my_new_project.shopify_daily_sales_orders' was properly closed.
+2022-07-08 08:37:28.016714 (MainThread): 
+2022-07-08 08:37:28.017710 (MainThread): Completed successfully
+2022-07-08 08:37:28.018707 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2022-07-08 08:37:28.018707 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A010D9AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A0139DDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026A0139D730>]}
+2022-07-08 08:37:28.019706 (MainThread): Flushing usage events
+2022-07-08 08:44:07.671086 (MainThread): Running with dbt=0.21.1
+2022-07-08 08:44:08.215701 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 08:44:09.163916 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=None, exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 08:44:09.164913 (MainThread): Tracking: tracking
+2022-07-08 08:44:09.164913 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D23E1490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D23E13D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D23E14F0>]}
+2022-07-08 08:44:09.180870 (MainThread): Partial parsing not enabled
+2022-07-08 08:44:09.220763 (MainThread): Parsing macros\adapters.sql
+2022-07-08 08:44:09.260688 (MainThread): Parsing macros\catalog.sql
+2022-07-08 08:44:09.262683 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 08:44:09.272659 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 08:44:09.277611 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 08:44:09.281600 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 08:44:09.286586 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 08:44:09.288581 (MainThread): Parsing macros\core.sql
+2022-07-08 08:44:09.292571 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 08:44:09.352410 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 08:44:09.362386 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 08:44:09.364379 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 08:44:09.366376 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 08:44:09.369367 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 08:44:09.371362 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 08:44:09.373356 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 08:44:09.376381 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 08:44:09.386351 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 08:44:09.394299 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 08:44:09.409260 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 08:44:09.411255 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 08:44:09.425216 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 08:44:09.450151 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 08:44:09.486061 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 08:44:09.528979 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 08:44:09.529973 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 08:44:09.550886 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 08:44:09.561857 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 08:44:09.569876 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 08:44:09.576822 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 08:44:09.578817 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 08:44:09.580812 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 08:44:09.581809 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 08:44:09.832415 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:44:09.852414 (MainThread): 1699: statically parsed example\shopify_daily_discount_data.sql
+2022-07-08 08:44:09.858401 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:44:09.859398 (MainThread): Sending event: {'category': 'dbt', 'action': 'experimental_parser', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D4CBA6A0>]}
+2022-07-08 08:44:09.861393 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:44:09.865391 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:44:09.868383 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:44:09.871381 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:44:09.911301 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.913297 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.915289 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.917252 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.919280 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.921275 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.924263 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.926260 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.929221 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.931215 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.933210 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.935204 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.937199 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.939194 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.941191 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.944220 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.946205 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.948203 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.949197 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.951194 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 08:44:09.972613 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D4D1FF10>]}
+2022-07-08 08:44:09.981589 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 08:44:09.982587 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D4D1FF70>]}
+2022-07-08 08:44:09.983586 (MainThread): Found 6 models, 20 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 08:44:09.987576 (MainThread): 
+2022-07-08 08:44:09.987576 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:44:09.990567 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 08:44:10.009518 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 08:44:10.009518 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 08:44:10.009518 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 08:44:12.374598 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.37 seconds
+2022-07-08 08:44:12.378226 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 08:44:12.937201 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:44:12.944179 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 08:44:12.944179 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 08:44:12.944179 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 08:44:15.051877 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 13 in 2.11 seconds
+2022-07-08 08:44:15.053870 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 08:44:15.662958 (MainThread): 14:14:15 | Concurrency: 1 threads (target='dev')
+2022-07-08 08:44:15.662958 (MainThread): 14:14:15 | 
+2022-07-08 08:44:15.668179 (Thread-1): Began running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 08:44:15.668179 (Thread-1): 14:14:15 | 1 of 6 START table model albinschema.shopify_daily_avg_order......... [RUN]
+2022-07-08 08:44:15.669214 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:44:15.670213 (Thread-1): Compiling model.my_new_project.shopify_daily_avg_order
+2022-07-08 08:44:15.671210 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 08:44:15.672204 (Thread-1): finished collecting timing info
+2022-07-08 08:44:15.693647 (Thread-1): Dropping relation "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_DAILY_AVG_ORDER" because it is of type view
+2022-07-08 08:44:15.699665 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:44:15.699665 (Thread-1): On model.my_new_project.shopify_daily_avg_order: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_avg_order"} */
+drop view if exists "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_DAILY_AVG_ORDER" cascade
+2022-07-08 08:44:15.700663 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 08:44:17.647174 (Thread-1): SQL status: SUCCESS 1 in 1.95 seconds
+2022-07-08 08:44:17.659142 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_avg_order"
+2022-07-08 08:44:17.660136 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 08:44:17.661103 (Thread-1): On model.my_new_project.shopify_daily_avg_order: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_avg_order"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_avg_order  as
+      (-- Use the `ref` function to select from other models
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,ROUND(AVG(TOTAL_PRICE_USD),2) AS AVG_SALES 
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+ORDER BY 1
+      );
+2022-07-08 08:44:19.962398 (Thread-1): SQL status: SUCCESS 1 in 2.30 seconds
+2022-07-08 08:44:19.973368 (Thread-1): finished collecting timing info
+2022-07-08 08:44:19.973368 (Thread-1): On model.my_new_project.shopify_daily_avg_order: Close
+2022-07-08 08:44:20.521575 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D5062D30>]}
+2022-07-08 08:44:20.521575 (Thread-1): 14:14:20 | 1 of 6 OK created table model albinschema.shopify_daily_avg_order.... [SUCCESS 1 in 4.85s]
+2022-07-08 08:44:20.522694 (Thread-1): Finished running node model.my_new_project.shopify_daily_avg_order
+2022-07-08 08:44:20.522694 (Thread-1): Began running node model.my_new_project.shopify_daily_discount_data
+2022-07-08 08:44:20.523688 (Thread-1): 14:14:20 | 2 of 6 START table model albinschema.shopify_daily_discount_data..... [RUN]
+2022-07-08 08:44:20.523688 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:44:20.523688 (Thread-1): Compiling model.my_new_project.shopify_daily_discount_data
+2022-07-08 08:44:20.525720 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_discount_data"
+2022-07-08 08:44:20.526687 (Thread-1): finished collecting timing info
+2022-07-08 08:44:20.528680 (Thread-1): Dropping relation "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_DAILY_DISCOUNT_DATA" because it is of type view
+2022-07-08 08:44:20.530673 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:44:20.530673 (Thread-1): On model.my_new_project.shopify_daily_discount_data: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_discount_data"} */
+drop view if exists "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_DAILY_DISCOUNT_DATA" cascade
+2022-07-08 08:44:20.530673 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:44:22.866112 (Thread-1): SQL status: SUCCESS 1 in 2.34 seconds
+2022-07-08 08:44:22.868105 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_discount_data"
+2022-07-08 08:44:22.870100 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 08:44:22.870100 (Thread-1): On model.my_new_project.shopify_daily_discount_data: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_discount_data"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_discount_data  as
+      (select cast(created_at as date) as order_date,discount.code,discount.value 
+as discount_value,count(o.id) Order_Count,sum(total_discounts) total_discounts
+from  "FIVETRAN_DATABASE"."SHOPIFY_DS"."DISCOUNT_APPLICATION" discount
+inner join "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER" o 
+on discount.order_id = o.id
+where discount.code is not null
+group by 1,2,3
+order by 4 desc
+      );
+2022-07-08 08:44:24.829294 (Thread-1): SQL status: SUCCESS 1 in 1.96 seconds
+2022-07-08 08:44:24.830291 (Thread-1): finished collecting timing info
+2022-07-08 08:44:24.831288 (Thread-1): On model.my_new_project.shopify_daily_discount_data: Close
+2022-07-08 08:44:25.437226 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D4F8FF70>]}
+2022-07-08 08:44:25.437226 (Thread-1): 14:14:25 | 2 of 6 OK created table model albinschema.shopify_daily_discount_data [SUCCESS 1 in 4.91s]
+2022-07-08 08:44:25.438967 (Thread-1): Finished running node model.my_new_project.shopify_daily_discount_data
+2022-07-08 08:44:25.438967 (Thread-1): Began running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:44:25.438967 (Thread-1): 14:14:25 | 3 of 6 START table model albinschema.shopify_daily_sales_orders...... [RUN]
+2022-07-08 08:44:25.440081 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:44:25.440081 (Thread-1): Compiling model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:44:25.443111 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:44:25.444076 (Thread-1): finished collecting timing info
+2022-07-08 08:44:25.448063 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_daily_sales_orders"
+2022-07-08 08:44:25.449063 (Thread-1): Using snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 08:44:25.450060 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_daily_sales_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_daily_sales_orders  as
+      (/*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+SELECT CAST(CREATED_AT AS DATE)AS ORDER_DATE,SUM(TOTAL_PRICE_USD) AS TOTAL_SALES,COUNT(ID) AS TOTAL_ORDERS FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+GROUP BY 1
+having total_sales > 0
+ORDER BY 1 desc
+
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+      );
+2022-07-08 08:44:25.450060 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:44:29.274571 (Thread-1): SQL status: SUCCESS 1 in 3.82 seconds
+2022-07-08 08:44:29.276566 (Thread-1): finished collecting timing info
+2022-07-08 08:44:29.276566 (Thread-1): On model.my_new_project.shopify_daily_sales_orders: Close
+2022-07-08 08:44:29.993298 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D50B0880>]}
+2022-07-08 08:44:29.993298 (Thread-1): 14:14:29 | 3 of 6 OK created table model albinschema.shopify_daily_sales_orders. [SUCCESS 1 in 4.55s]
+2022-07-08 08:44:29.994262 (Thread-1): Finished running node model.my_new_project.shopify_daily_sales_orders
+2022-07-08 08:44:29.994262 (Thread-1): Began running node model.my_new_project.shopify_refund_orders
+2022-07-08 08:44:29.995259 (Thread-1): 14:14:29 | 4 of 6 START table model albinschema.shopify_refund_orders........... [RUN]
+2022-07-08 08:44:29.995494 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:44:29.995494 (Thread-1): Compiling model.my_new_project.shopify_refund_orders
+2022-07-08 08:44:29.997494 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_refund_orders"
+2022-07-08 08:44:29.998491 (Thread-1): finished collecting timing info
+2022-07-08 08:44:30.001492 (Thread-1): Dropping relation "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_REFUND_ORDERS" because it is of type view
+2022-07-08 08:44:30.003494 (Thread-1): Using snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:44:30.003494 (Thread-1): On model.my_new_project.shopify_refund_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_refund_orders"} */
+drop view if exists "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_REFUND_ORDERS" cascade
+2022-07-08 08:44:30.003494 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:44:32.547741 (Thread-1): SQL status: SUCCESS 1 in 2.54 seconds
+2022-07-08 08:44:32.549739 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_refund_orders"
+2022-07-08 08:44:32.550736 (Thread-1): Using snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 08:44:32.550736 (Thread-1): On model.my_new_project.shopify_refund_orders: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_refund_orders"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_refund_orders  as
+      (select to_char(cast(created_at as date),'MM-YYYY') as REFUND_MONTH,NOTE as REASON,count(distinct id) REFUND_ORDERS
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."REFUND"
+GROUP BY 1,2 
+ORDER BY 1 DESC
+      );
+2022-07-08 08:44:34.782912 (Thread-1): SQL status: SUCCESS 1 in 2.23 seconds
+2022-07-08 08:44:34.783907 (Thread-1): finished collecting timing info
+2022-07-08 08:44:34.784904 (Thread-1): On model.my_new_project.shopify_refund_orders: Close
+2022-07-08 08:44:35.362543 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D50E1D90>]}
+2022-07-08 08:44:35.362543 (Thread-1): 14:14:35 | 4 of 6 OK created table model albinschema.shopify_refund_orders...... [SUCCESS 1 in 5.37s]
+2022-07-08 08:44:35.363541 (Thread-1): Finished running node model.my_new_project.shopify_refund_orders
+2022-07-08 08:44:35.363541 (Thread-1): Began running node model.my_new_project.shopify_sales_city
+2022-07-08 08:44:35.364539 (Thread-1): 14:14:35 | 5 of 6 START table model albinschema.shopify_sales_city.............. [RUN]
+2022-07-08 08:44:35.364539 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:44:35.365538 (Thread-1): Compiling model.my_new_project.shopify_sales_city
+2022-07-08 08:44:35.367531 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_sales_city"
+2022-07-08 08:44:35.367531 (Thread-1): finished collecting timing info
+2022-07-08 08:44:35.371554 (Thread-1): Dropping relation "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_SALES_CITY" because it is of type view
+2022-07-08 08:44:35.372553 (Thread-1): Using snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:44:35.372553 (Thread-1): On model.my_new_project.shopify_sales_city: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_sales_city"} */
+drop view if exists "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_SALES_CITY" cascade
+2022-07-08 08:44:35.373515 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:44:37.263985 (Thread-1): SQL status: SUCCESS 1 in 1.89 seconds
+2022-07-08 08:44:37.264982 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_sales_city"
+2022-07-08 08:44:37.266979 (Thread-1): Using snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 08:44:37.266979 (Thread-1): On model.my_new_project.shopify_sales_city: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_sales_city"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_sales_city  as
+      (Select 
+cast(CREATED_AT as DATE) AS ORDER_DATE ,SHIPPING_ADDRESS_CITY as CITY,SHIPPING_ADDRESS_COUNTRY as COUNTRY, SUM(TOTAL_PRICE_USD) as TOTAL_SALES
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+where CITY IS NOT NULL AND COUNTRY IS NOT NULL 
+group by 1,2,3
+HAVING TOTAL_SALES>0
+order by 3 desc
+      );
+2022-07-08 08:44:38.410016 (Thread-1): SQL status: SUCCESS 1 in 1.14 seconds
+2022-07-08 08:44:38.412045 (Thread-1): finished collecting timing info
+2022-07-08 08:44:38.412045 (Thread-1): On model.my_new_project.shopify_sales_city: Close
+2022-07-08 08:44:38.957526 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D4F88E50>]}
+2022-07-08 08:44:38.958523 (Thread-1): 14:14:38 | 5 of 6 OK created table model albinschema.shopify_sales_city......... [SUCCESS 1 in 3.59s]
+2022-07-08 08:44:38.959520 (Thread-1): Finished running node model.my_new_project.shopify_sales_city
+2022-07-08 08:44:38.959520 (Thread-1): Began running node model.my_new_project.shopify_top_selling_product
+2022-07-08 08:44:38.960408 (Thread-1): 14:14:38 | 6 of 6 START table model albinschema.shopify_top_selling_product..... [RUN]
+2022-07-08 08:44:38.960791 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:44:38.960791 (Thread-1): Compiling model.my_new_project.shopify_top_selling_product
+2022-07-08 08:44:38.961793 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_top_selling_product"
+2022-07-08 08:44:38.962790 (Thread-1): finished collecting timing info
+2022-07-08 08:44:38.965779 (Thread-1): Dropping relation "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_TOP_SELLING_PRODUCT" because it is of type view
+2022-07-08 08:44:38.968774 (Thread-1): Using snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:44:38.968774 (Thread-1): On model.my_new_project.shopify_top_selling_product: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_top_selling_product"} */
+drop view if exists "TRAININGDB"."ALBINSCHEMA"."SHOPIFY_TOP_SELLING_PRODUCT" cascade
+2022-07-08 08:44:38.968774 (Thread-1): Opening a new connection, currently in state closed
+2022-07-08 08:44:41.077920 (Thread-1): SQL status: SUCCESS 1 in 2.11 seconds
+2022-07-08 08:44:41.078910 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_top_selling_product"
+2022-07-08 08:44:41.080877 (Thread-1): Using snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 08:44:41.080877 (Thread-1): On model.my_new_project.shopify_top_selling_product: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_top_selling_product"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_top_selling_product  as
+      (SELECT
+P.TITLE, S.ORDER_DATE,SUM(S.SALES) AS TOTAL_SALES
+FROM (
+SELECT PRODUCT_ID, CAST(O.CREATED_AT AS DATE) AS ORDER_DATE,ROUND(SUM(TOTAL_PRICE),2) AS SALES
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER_LINE" OL
+LEFT JOIN "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER" O 
+ON O.ID = OL.ORDER_ID
+group by 1,2
+)S
+LEFT JOIN "FIVETRAN_DATABASE"."SHOPIFY_DS"."PRODUCT" P 
+ON S.PRODUCT_ID = P.ID
+WHERE P.TITLE IS NOT NULL
+GROUP BY 1,2
+ORDER BY 3 DESC
+      );
+2022-07-08 08:44:42.932140 (Thread-1): SQL status: SUCCESS 1 in 1.85 seconds
+2022-07-08 08:44:42.934164 (Thread-1): finished collecting timing info
+2022-07-08 08:44:42.934164 (Thread-1): On model.my_new_project.shopify_top_selling_product: Close
+2022-07-08 08:44:43.497973 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '487a7de1-eec3-4b3b-ae10-38fcc2a828a6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D50BF7F0>]}
+2022-07-08 08:44:43.497973 (Thread-1): 14:14:43 | 6 of 6 OK created table model albinschema.shopify_top_selling_product [SUCCESS 1 in 4.54s]
+2022-07-08 08:44:43.499708 (Thread-1): Finished running node model.my_new_project.shopify_top_selling_product
+2022-07-08 08:44:43.500168 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 08:44:43.501168 (MainThread): 14:14:43 | 
+2022-07-08 08:44:43.501168 (MainThread): 14:14:43 | Finished running 6 table models in 33.51s.
+2022-07-08 08:44:43.502165 (MainThread): Connection 'master' was properly closed.
+2022-07-08 08:44:43.502165 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 08:44:43.502165 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 08:44:43.502165 (MainThread): Connection 'model.my_new_project.shopify_top_selling_product' was properly closed.
+2022-07-08 08:44:43.508151 (MainThread): 
+2022-07-08 08:44:43.508151 (MainThread): Completed successfully
+2022-07-08 08:44:43.509147 (MainThread): 
+Done. PASS=6 WARN=0 ERROR=0 SKIP=0 TOTAL=6
+2022-07-08 08:44:43.509147 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D50B0880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D5062D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000222D4D1F850>]}
+2022-07-08 08:44:43.510145 (MainThread): Flushing usage events
+2022-07-08 09:47:54.058323 (MainThread): Running with dbt=0.21.1
+2022-07-08 09:47:54.803294 (MainThread): NumExpr defaulting to 4 threads.
+2022-07-08 09:47:56.087493 (MainThread): running dbt with arguments Namespace(record_timing_info=None, debug=False, log_format='default', write_json=True, use_colors=None, strict=False, warn_error=False, partial_parse=None, single_threaded=False, test_new_parser=False, use_experimental_parser=False, project_dir=None, profiles_dir='C:\\Users\\Admin\\.dbt', profile=None, target=None, vars='{}', log_cache_events=False, use_cache=True, fail_fast=False, threads=None, version_check=True, select=['shopify_sales_city'], exclude=None, selector_name=None, state=None, defer=None, full_refresh=False, cls=<class 'dbt.task.run.RunTask'>, which='run', rpc_method='run')
+2022-07-08 09:47:56.088309 (MainThread): Tracking: tracking
+2022-07-08 09:47:56.088309 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240C97F1460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240C97F13A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240C97F14C0>]}
+2022-07-08 09:47:56.108079 (MainThread): Partial parsing not enabled
+2022-07-08 09:47:56.166659 (MainThread): Parsing macros\adapters.sql
+2022-07-08 09:47:56.225575 (MainThread): Parsing macros\catalog.sql
+2022-07-08 09:47:56.227569 (MainThread): Parsing macros\materializations\incremental.sql
+2022-07-08 09:47:56.236957 (MainThread): Parsing macros\materializations\merge.sql
+2022-07-08 09:47:56.241606 (MainThread): Parsing macros\materializations\seed.sql
+2022-07-08 09:47:56.245731 (MainThread): Parsing macros\materializations\table.sql
+2022-07-08 09:47:56.248691 (MainThread): Parsing macros\materializations\view.sql
+2022-07-08 09:47:56.250755 (MainThread): Parsing macros\core.sql
+2022-07-08 09:47:56.254795 (MainThread): Parsing macros\adapters\common.sql
+2022-07-08 09:47:56.325622 (MainThread): Parsing macros\etc\datetime.sql
+2022-07-08 09:47:56.336959 (MainThread): Parsing macros\etc\get_custom_alias.sql
+2022-07-08 09:47:56.338585 (MainThread): Parsing macros\etc\get_custom_database.sql
+2022-07-08 09:47:56.340580 (MainThread): Parsing macros\etc\get_custom_schema.sql
+2022-07-08 09:47:56.342575 (MainThread): Parsing macros\etc\is_incremental.sql
+2022-07-08 09:47:56.344570 (MainThread): Parsing macros\etc\query.sql
+2022-07-08 09:47:56.345569 (MainThread): Parsing macros\etc\where_subquery.sql
+2022-07-08 09:47:56.348618 (MainThread): Parsing macros\materializations\helpers.sql
+2022-07-08 09:47:56.361540 (MainThread): Parsing macros\materializations\test.sql
+2022-07-08 09:47:56.374507 (MainThread): Parsing macros\materializations\common\merge.sql
+2022-07-08 09:47:56.391006 (MainThread): Parsing macros\materializations\incremental\helpers.sql
+2022-07-08 09:47:56.392591 (MainThread): Parsing macros\materializations\incremental\incremental.sql
+2022-07-08 09:47:56.407508 (MainThread): Parsing macros\materializations\incremental\on_schema_change.sql
+2022-07-08 09:47:56.428492 (MainThread): Parsing macros\materializations\seed\seed.sql
+2022-07-08 09:47:56.471406 (MainThread): Parsing macros\materializations\snapshot\snapshot.sql
+2022-07-08 09:47:56.513214 (MainThread): Parsing macros\materializations\snapshot\snapshot_merge.sql
+2022-07-08 09:47:56.514648 (MainThread): Parsing macros\materializations\snapshot\strategies.sql
+2022-07-08 09:47:56.543590 (MainThread): Parsing macros\materializations\table\table.sql
+2022-07-08 09:47:56.557570 (MainThread): Parsing macros\materializations\view\create_or_replace_view.sql
+2022-07-08 09:47:56.562558 (MainThread): Parsing macros\materializations\view\view.sql
+2022-07-08 09:47:56.570567 (MainThread): Parsing macros\schema_tests\accepted_values.sql
+2022-07-08 09:47:56.572583 (MainThread): Parsing macros\schema_tests\not_null.sql
+2022-07-08 09:47:56.574581 (MainThread): Parsing macros\schema_tests\relationships.sql
+2022-07-08 09:47:56.575609 (MainThread): Parsing macros\schema_tests\unique.sql
+2022-07-08 09:47:56.959682 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_avg_order".
+2022-07-08 09:47:56.972406 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_discount_data".
+2022-07-08 09:47:56.976075 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_daily_sales_orders".
+2022-07-08 09:47:56.979423 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_refund_orders".
+2022-07-08 09:47:56.982390 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 09:47:56.985415 (MainThread): Acquiring new snowflake connection "model.my_new_project.shopify_top_selling_product".
+2022-07-08 09:47:57.030947 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.032657 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.034841 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.036481 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.038478 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.039480 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.042436 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.044609 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.046747 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.047861 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.050789 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.053752 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.055822 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.059736 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.062727 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.065719 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.067713 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.070706 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.072770 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.075797 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.078788 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2022-07-08 09:47:57.097749 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '577f03b1-b62a-4b73-8692-38ee0466f7a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240CBF73640>]}
+2022-07-08 09:47:57.110327 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2022-07-08 09:47:57.110729 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '577f03b1-b62a-4b73-8692-38ee0466f7a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240CBFF7820>]}
+2022-07-08 09:47:57.111728 (MainThread): Found 6 models, 21 tests, 0 snapshots, 0 analyses, 172 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2022-07-08 09:47:57.114727 (MainThread): 
+2022-07-08 09:47:57.115717 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 09:47:57.117711 (ThreadPoolExecutor-0_0): Acquiring new snowflake connection "list_trainingdb".
+2022-07-08 09:47:57.137657 (ThreadPoolExecutor-0_0): Using snowflake connection "list_trainingdb".
+2022-07-08 09:47:57.137828 (ThreadPoolExecutor-0_0): On list_trainingdb: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb"} */
+
+    show terse schemas in database trainingdb
+    limit 10000
+2022-07-08 09:47:57.137828 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2022-07-08 09:47:59.814606 (ThreadPoolExecutor-0_0): SQL status: SUCCESS 10 in 2.68 seconds
+2022-07-08 09:47:59.824580 (ThreadPoolExecutor-0_0): On list_trainingdb: Close
+2022-07-08 09:48:00.486640 (ThreadPoolExecutor-1_0): Acquiring new snowflake connection "list_trainingdb_albinschema".
+2022-07-08 09:48:00.504887 (ThreadPoolExecutor-1_0): Using snowflake connection "list_trainingdb_albinschema".
+2022-07-08 09:48:00.506039 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "connection_name": "list_trainingdb_albinschema"} */
+
+    show terse objects in trainingdb.albinschema
+2022-07-08 09:48:00.506039 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2022-07-08 09:48:03.172158 (ThreadPoolExecutor-1_0): SQL status: SUCCESS 13 in 2.67 seconds
+2022-07-08 09:48:03.177269 (ThreadPoolExecutor-1_0): On list_trainingdb_albinschema: Close
+2022-07-08 09:48:03.834847 (MainThread): 15:18:03 | Concurrency: 1 threads (target='dev')
+2022-07-08 09:48:03.834847 (MainThread): 15:18:03 | 
+2022-07-08 09:48:03.842826 (Thread-1): Began running node model.my_new_project.shopify_sales_city
+2022-07-08 09:48:03.843821 (Thread-1): 15:18:03 | 1 of 1 START table model albinschema.shopify_sales_city.............. [RUN]
+2022-07-08 09:48:03.845815 (Thread-1): Acquiring new snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 09:48:03.845815 (Thread-1): Compiling model.my_new_project.shopify_sales_city
+2022-07-08 09:48:03.848809 (Thread-1): Writing injected SQL for node "model.my_new_project.shopify_sales_city"
+2022-07-08 09:48:03.850807 (Thread-1): finished collecting timing info
+2022-07-08 09:48:03.899498 (Thread-1): Writing runtime SQL for node "model.my_new_project.shopify_sales_city"
+2022-07-08 09:48:03.901612 (Thread-1): Using snowflake connection "model.my_new_project.shopify_sales_city".
+2022-07-08 09:48:03.901612 (Thread-1): On model.my_new_project.shopify_sales_city: /* {"app": "dbt", "dbt_version": "0.21.1", "profile_name": "snowflake", "target_name": "dev", "node_id": "model.my_new_project.shopify_sales_city"} */
+
+
+      create or replace transient table trainingdb.albinschema.shopify_sales_city  as
+      (Select 
+cast(CREATED_AT as DATE) AS ORDER_DATE ,SHIPPING_ADDRESS_CITY as CITY,SHIPPING_ADDRESS_PROVINCE as PROVINCE,SHIPPING_ADDRESS_COUNTRY as COUNTRY, SUM(TOTAL_PRICE_USD) as TOTAL_SALES
+FROM "FIVETRAN_DATABASE"."SHOPIFY_DS"."ORDER"
+where CITY IS NOT NULL AND COUNTRY IS NOT NULL 
+group by 1,2,3,4
+HAVING TOTAL_SALES>0
+order by 3 desc
+      );
+2022-07-08 09:48:03.902489 (Thread-1): Opening a new connection, currently in state init
+2022-07-08 09:48:09.183693 (Thread-1): SQL status: SUCCESS 1 in 5.28 seconds
+2022-07-08 09:48:09.207629 (Thread-1): finished collecting timing info
+2022-07-08 09:48:09.207629 (Thread-1): On model.my_new_project.shopify_sales_city: Close
+2022-07-08 09:48:09.808002 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '577f03b1-b62a-4b73-8692-38ee0466f7a3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240CC48CA00>]}
+2022-07-08 09:48:09.808956 (Thread-1): 15:18:09 | 1 of 1 OK created table model albinschema.shopify_sales_city......... [SUCCESS 1 in 5.96s]
+2022-07-08 09:48:09.810257 (Thread-1): Finished running node model.my_new_project.shopify_sales_city
+2022-07-08 09:48:09.812943 (MainThread): Acquiring new snowflake connection "master".
+2022-07-08 09:48:09.813922 (MainThread): 15:18:09 | 
+2022-07-08 09:48:09.813922 (MainThread): 15:18:09 | Finished running 1 table model in 12.70s.
+2022-07-08 09:48:09.814918 (MainThread): Connection 'master' was properly closed.
+2022-07-08 09:48:09.815917 (MainThread): Connection 'list_trainingdb' was properly closed.
+2022-07-08 09:48:09.815917 (MainThread): Connection 'list_trainingdb_albinschema' was properly closed.
+2022-07-08 09:48:09.815917 (MainThread): Connection 'model.my_new_project.shopify_sales_city' was properly closed.
+2022-07-08 09:48:09.828499 (MainThread): 
+2022-07-08 09:48:09.829500 (MainThread): Completed successfully
+2022-07-08 09:48:09.834004 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2022-07-08 09:48:09.835001 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240CBFF7E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240CC25C280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000240CC473B50>]}
+2022-07-08 09:48:09.835999 (MainThread): Flushing usage events

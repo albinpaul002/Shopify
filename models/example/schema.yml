@@ -1,0 +1,111 @@
+
+version: 2
+
+models:
+  - name: shopify_daily_sales_orders
+    description: "dbt model for daily total of sales and orders"
+    columns:
+      - name: ORDER_DATE
+        description: "Date of placing order"
+        tests:
+          - not_null
+      - name: TOTAL_SALES
+        description: "Total sales for that day"
+        tests:
+          - not_null      
+      - name: TOTAL_ORDERS
+        description: "Total orders placed that day"
+        tests:
+          - not_null
+
+  - name: shopify_daily_avg_order
+    description: " dbt model for nomber of daily average orders"
+    columns:
+      - name: ORDER_DATE
+        description: "Date of placing order"
+        tests:
+          - not_null
+      - name: AVG_SALES
+        description: "Average sales for that day"
+        tests:
+          - not_null
+
+  - name: shopify_refund_orders
+    description: " dbt model for number of monthly refund orders"
+    columns:
+      - name: REFUND_MONTH
+        description: "MONTH OF REFUND"
+        tests:
+          - not_null
+      - name: REASON
+        description: "REASON FOR REFUND"
+        tests:
+          - not_null 
+      - name: REFUND_ORDERS
+        description: "NO. OF REFUND ORDERS"
+        tests:
+          - not_null 
+
+  - name: shopify_top_selling_product
+    description: " dbt model for top selling product"
+    columns:
+      - name: TITLE
+        description: "title of product"
+        tests:
+          - not_null
+      - name: ORDER_DATE
+        description: "date of order"
+        tests:
+          - not_null 
+      - name: TOTAL_SALES
+        description: "total sales for that product"
+        tests:
+          - not_null 
+
+  - name: shopify_sales_city
+    description: " dbt model for sales per shipping city"
+    columns:
+      - name: ORDER_DATE
+        description: "date of order"
+        tests:
+          - not_null
+      - name: CITY
+        description: "city order shipped to"
+        tests:
+          - not_null 
+      - name: PROVINCE
+        description: "province order shipped to"
+        tests:
+          - not_null 
+      - name: COUNTRY
+        description: "country order shipped to"
+        tests:
+          - not_null 
+      - name: TOTAL_SALES
+        description: "total sales for that product"
+        tests:
+          - not_null 
+
+  - name: shopify_daily_discount_data
+    description: " dbt model for discount info"
+    columns:
+      - name: ORDER_DATE
+        description: "date of order"
+        tests:
+          - not_null
+      - name: CODE
+        description: "discount code"
+        tests:
+          - not_null 
+      - name: DISCOUNT_VALUE
+        description: "dicount amount for that code"
+        tests:
+          - not_null 
+      - name: ORDER_COUNT
+        description: "total orders which used that discount code"
+        tests:
+          - not_null 
+      - name: TOTAL_DISCOUNT
+        description: "total discount value"
+        tests:
+          - not_null 
